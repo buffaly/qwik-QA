@@ -30,13 +30,13 @@ export default component$(() => {
 
   return (
     <div class="flex flex-col justify-center items-center py-4 pb-[600px]">
-      <h1 class="text-[72px] text-center">Questions?</h1>
+      <h1 class="text-[48px] md:text-[72px] text-center">Questions?</h1>
         {list.value.map((item) => (
           <Card name={item.name} question={item.question} />
         ))}
       
 
-      <div class="rounded-lg my-2 max-w-[500px] px-6 p-2 bg-white justify-center items-center w-1/2  m-auto mx-auto h-1/3 sm:h-1/3 md:w-1/3 md:h-1/3 lg:w-full  lg:mx-5 lg:h-1/3 filter drop-shadow-2xl fixed bottom-0">
+      <div class="rounded-lg my-2 max-w-[500px] px-6 p-2 bg-white justify-center items-center w-full m-auto mx-auto h-1/3 sm:h-1/3 md:h-1/3 lg:mx-5 lg:h-1/3 filter drop-shadow-2xl fixed bottom-0">
         <div class="mt-3  sm:mt-5">
           <h1 class="text-xl text-gray-600 tracking-wider sm:text-md font-black">What is your question</h1>
         </div>
